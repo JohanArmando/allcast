@@ -67,19 +67,24 @@
                             <div class="form-group">
                                 <label for="fms" class="col-sm-3 control-label">Pubish server</label>
                                 <div class="col-sm-9">
-                                    <input type="text" readonly="" class="form-control" onclick="this.focus();this.select();" id="fms" value="rtmp://cnd.bcast.pw:1935/stream">
+                                    <input type="text" readonly="" class="form-control" onclick="this.focus();this.select();" id="fms"
+                                           value="{{$stream->information->server}}">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="sf" class="col-sm-3 control-label">Stream key</label>
                                 <div class="col-sm-9">
-                                    <input type="text" readonly="" class="form-control" onclick="this.focus();this.select();" id="sf" value="vNWh8rKKYKKg?acc=madmax&amp;pass=<yourpass>">
+                                    <input type="text" readonly="" class="form-control" onclick="this.focus();this.select();" id="sf"
+                                           value="{{$stream->information->key}}">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="sf" class="col-sm-3 control-label">Embed code</label>
                                 <div class="col-sm-9">
-                                    <textarea rows="4" id="embed_code" readonly="" class="form-control" onclick="this.focus();this.select();">&lt;script type='text/javascript'&gt;id='1909'; width='640'; height='360';&lt;/script&gt;&lt;script type='text/javascript' src='http://www.bcast.site/static/player.js'&gt;&lt;/script&gt;</textarea>
+                                    <textarea rows="4" id="embed_code" readonly="" class="form-control" onclick="this.focus();this.select();">
+                                        <script type='text/javascript' id='{{$stream->information->code}}' width='640' height='360'></script>
+                                        <script type='text/javascript' src='#'></script>
+                                    </textarea>
                                 </div>
                             </div>
                             <div class="form-group">

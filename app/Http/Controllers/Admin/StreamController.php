@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Stream;
+use App\Models\StreamsInformation;
 use Illuminate\Http\Request;
 
 class StreamController extends Controller
@@ -15,10 +16,21 @@ class StreamController extends Controller
 
     public function store(Request $request)
     {
-        Stream::create([
+        $stream = Stream::create([
             'title' => $request->get('title'),
             'domain' => $request->get('domain'),
             'user_id' => Auth('web')->user()->id
+        ]);
+        $caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+        $numerodeletras=12;
+        $cadena = "";
+        for($i=0;$i<$numerodeletras;$i++) {$cadena .= substr($caracteres,rand(0,strlen($caracteres)),1);}
+        StreamsInformation::create([
+            'stream_id' => $stream->id,
+            'server'    => 'prueba',
+            'key'       => $cadena,
+            'code'      => $stream->id,
+            'size'      => '640x360'
         ]);
         return redirect('home');
     }
