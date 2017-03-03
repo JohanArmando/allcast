@@ -16,25 +16,28 @@
                         <thead>
                         <tr>
                             <th class="item-title">#</th>
-                            <th class="item-title"></th>
                             <th class="item-title">Title</th>
                             <th>Domain(s)</th>
                             <th>Stream key</th>
                             <th class="item-title">Views</th>
+                            <th class="item-title" colspan="2">Actions</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
                             @foreach($streams as $stream)
+                            <tr>
                                 <th scope="row" class="item-title">{{$stream->id}}</th>
-                                <td class="item-title"><a href="/edit/1909"><i class="glyphicon glyphicon-pencil"></i></a></td>
-                                <td class="item-title"><a href="/play/1909">{{$stream->title}}</a></td>
+                                <td class="item-title"><a href="{{url('stream/'.$stream->id)}}">{{$stream->title}}</a></td>
                                 <td>{{$stream->domain}}</td>
-                                <td>vNWh8rKKYKKg</td>
+                                <td></td>
                                 <td class="item-title"></td>
+                                <td class="item-title">
+                                    <a href="{{url('stream/'.$stream->id.'/edit')}}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                </td>
+                            </tr>
                             @endforeach
-                        </tr>
-                        </tbody></table>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
