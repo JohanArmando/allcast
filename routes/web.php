@@ -14,7 +14,9 @@
 Route::get('/', function () {
     return view('auth.login');
 });
-
+Route::get('/player', function () {
+    return view('admin.player');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

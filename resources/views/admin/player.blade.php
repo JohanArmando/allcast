@@ -1,0 +1,1 @@
+<script src="//content.jwplatform.com/players/MEDIAID-PLAYERID.js"> </script>

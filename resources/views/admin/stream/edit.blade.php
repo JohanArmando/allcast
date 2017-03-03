@@ -81,9 +81,9 @@
                             <div class="form-group">
                                 <label for="sf" class="col-sm-3 control-label">Embed code</label>
                                 <div class="col-sm-9">
-                                    <textarea rows="4" id="embed_code" readonly="" class="form-control" onclick="this.focus();this.select();">
-                                        <script type='text/javascript' id='{{$stream->information->code}}' width='640' height='360'></script>
-                                        <script type='text/javascript' src='#'></script>
+                                    <textarea rows="4" id="embed_code" readonly="" class="form-control"
+                                      onclick="this.focus();this.select();"><iframe scrolling="no" height="250px" width="300px" frameborder="0"
+                                                 allowtransparency="true" src="{{url('/player/width/600/height/500/autoplay/true')}}"></iframe>
                                     </textarea>
                                 </div>
                             </div>
@@ -117,4 +117,29 @@
 
         </div>
     </div>
+    <script>
+        text = $('#embed_code').val();
+
+        $(document).on('click', '.embd', function () {
+            alert('fdgdg');
+            switch ( $( ".embd" ).index( this ) ) {
+                case 0 :
+                    $('#embed_code').val(text);
+                    break;
+                case 1 :
+                    ntext = text.replace("360", "480");
+                    $('#embed_code').val(ntext);
+                    break;
+                case 2 :
+                    ntext = text.replace("640", "720").replace("360", "480");
+                    $('#embed_code').val(ntext);
+                    break;
+                case 3 :
+                    ntext = text.replace("640", "1280").replace("360", "720");
+                    $('#embed_code').val(ntext);
+                    break;
+            }
+
+        });
+    </script>
 @endsection

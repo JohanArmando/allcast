@@ -4,7 +4,8 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
         <div class="panel panel-default">
             <div class="embed-responsive embed-responsive-4by3">
-
+                <iframe class="embed-responsive-item" scrolling="no" height="250px" width="300px" frameborder="0" allowtransparency="true"
+                        src="http://www.bcast.site/stream.php?id=1909"></iframe>
             </div>
             <div class="panel-footer clearfix">
                 <div class="pull-left">
