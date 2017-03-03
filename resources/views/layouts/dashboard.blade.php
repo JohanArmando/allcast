@@ -21,10 +21,12 @@
 
 </head>
     <body data-ng-app>
-        @include('admin/partials/top')
+        @include('admin/partials/preloader')
         @include('admin/partials/left-menu')
-
+        @include('admin/partials/content')
     @yield('content')
+
+
 
     <!-- script's -->
     <script src="{{asset('dashboard/js/jquery/jquery-1.9.1.min.js')}}"></script>
