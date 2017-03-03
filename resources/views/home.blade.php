@@ -26,12 +26,12 @@
                         <tbody>
                             @foreach($streams as $stream)
                             <tr>
-                                <th scope="row" class="item-title">{{$stream->id}}</th>
-                                <td class="item-title"><a href="{{url('stream/'.$stream->id)}}">{{$stream->title}}</a></td>
+                                <th>{{$stream->id}}</th>
+                                <td><a href="{{url('stream/'.$stream->id)}}">{{$stream->title}}</a></td>
                                 <td>{{$stream->domain}}</td>
+                                <td>{{$stream->information->key}}</td>
                                 <td></td>
-                                <td class="item-title"></td>
-                                <td class="item-title">
+                                <td>
                                     <a href="{{url('stream/'.$stream->id.'/edit')}}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
                                 </td>
                             </tr>

@@ -13,7 +13,7 @@ class CreateTableStreamsInformations extends Migration
      */
     public function up()
     {
-        Schema::create('streams_information', function (Blueprint $table) {
+        Schema::create('streams_informations', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('stream_id')->unsigned();
             $table->foreign('stream_id')->references('id')->on('streams')->onDelete('cascade');
@@ -32,6 +32,6 @@ class CreateTableStreamsInformations extends Migration
      */
     public function down()
     {
-        Schema::drop('streams_information');
+        Schema::drop('streams_informations');
     }
 }
