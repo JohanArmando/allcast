@@ -13,7 +13,11 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="{{asset('dashboard/css/bootstrap/bootstrap.min.css')}}">
+=======
+    <link rel="stylesheet" href="{{asset('dashboard/css/bootstrap/bootstrap.css')}}">
+>>>>>>> 04e68e39305b64fd4dd7667c896919098f89148a
     <link rel="stylesheet" href="{{asset('dashboard/css/plugins/calendar/calendar.css')}}">
     <link rel="stylesheet" href="{{asset('dashboard/css/app/app.v1.css')}}">
 
