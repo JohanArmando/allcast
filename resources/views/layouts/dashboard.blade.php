@@ -20,16 +20,16 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300' rel='stylesheet' type='text/css'>
 
 </head>
-    <body data-ng-app>
-        @include('admin/partials/preloader')
+    <body>
         @include('admin/partials/left-menu')
-        @include('admin/partials/content')
-    @yield('content')
-
-
+        <section class="content">
+            @include('admin/partials/header')
+            @yield('content')
+            @include('admin/partials/footer')
+        </section>
 
     <!-- script's -->
-    <script src="{{asset('dashboard/js/jquery/jquery-1.9.1.min.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="{{asset('dashboard/js/plugins/underscore/underscore-min.js')}}"></script>
     <script src="{{asset('dashboard/js/bootstrap/bootstrap.min.js')}}"></script>
     <script src="{{asset('dashboard/js/globalize/globalize.min.js')}}"></script>

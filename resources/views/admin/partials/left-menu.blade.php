@@ -1,4 +1,5 @@
 <aside class="left-panel">
+
     <div class="user text-center">
         <img src="assets/images/avtar/user.png" class="img-circle" alt="...">
         <h4 class="user-name">Akshay Kumar</h4>
@@ -14,6 +15,8 @@
             </ul>
         </div>
     </div>
+
+
 
     <nav class="navigation">
         <ul class="list-unstyled">
@@ -75,8 +78,6 @@
                 </ul>
             </li>
         </ul>
-
     </nav>
-
 
 </aside>
