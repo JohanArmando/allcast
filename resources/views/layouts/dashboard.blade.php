@@ -13,7 +13,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{asset('dashboard/css/bootstrap/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('dashboard/css/bootstrap/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('dashboard/css/plugins/calendar/calendar.css')}}">
     <link rel="stylesheet" href="{{asset('dashboard/css/app/app.v1.css')}}">
 
