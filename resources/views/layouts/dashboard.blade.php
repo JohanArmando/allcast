@@ -20,11 +20,13 @@
 
 </head>
     <body>
-        @include('admin/partials/left-menu')
+        @include('admin.partials.left-menu')
         <section class="content">
-            @include('admin/partials/header')
+            @include('admin.partials.header')
+            <br>
+            @include('admin.partials.menu')
             @yield('content')
-            @include('admin/partials/footer')
+            @include('admin.partials.footer')
         </section>
 
     <!-- script's -->
@@ -34,6 +36,7 @@
     <script src="{{asset('dashboard/js/globalize.min.js')}}"></script>
     <script src="{{asset('dashboard/js/jquery.nicescroll.min.js')}}"></script>
     <script src="{{asset('dashboard/js/custom.js')}}"></script>
+    @yield('scripts')
 
     </body>
 

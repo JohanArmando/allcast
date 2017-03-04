@@ -1,17 +1,18 @@
 @extends('layouts.dashboard')
 
 @section('content')
+<div class="wrapper container-fluid">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
         <div class="panel panel-default">
             <div class="embed-responsive embed-responsive-4by3">
                 <iframe class="embed-responsive-item" scrolling="no" height="250px" width="300px" frameborder="0" allowtransparency="true"
-                        src="http://www.bcast.site/stream.php?id=1909"></iframe>
+                        src="{{url('/player')}}"></iframe>
             </div>
             <div class="panel-footer clearfix">
                 <div class="pull-left">
 
                     <a data-toggle-tool="tooltip" data-placement="top" title="Edit this channel" href="#" class="btn btn-success">
-                        <i class="glyphicon glyphicon-edit"></i> <span class="shrink">Customize</span>
+                        <i class="fa fa-edit"></i> <span class="shrink">Customize</span>
                     </a>
                     <a data-toggle-tool="tooltip" data-placement="top" title="Get the embed code" class="btn btn-default"
                        href="#" data-toggle="modal" data-target="#myModal">
@@ -27,4 +28,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection

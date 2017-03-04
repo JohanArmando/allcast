@@ -2,13 +2,12 @@
 
 @section('content')
     <div class="wrapper container-fluid">
-        <div class="marginTop"></div>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading clearfix">
                         <div class="pull-left">
-                            <h4><i class="glyphicon glyphicon-facetime-video blue"></i> My Streams</h4>
+                            <h4><i class="fa fa-play-circle blue"></i> My Streams</h4>
                         </div>
                     </div>
                     <div class="panel-body">
@@ -73,7 +72,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
+    </div>
+</div>
 @endsection

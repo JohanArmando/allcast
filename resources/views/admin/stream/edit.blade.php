@@ -1,6 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('content')
+<div class="wrapper container-fluid">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -81,10 +82,7 @@
                             <div class="form-group">
                                 <label for="sf" class="col-sm-3 control-label">Embed code</label>
                                 <div class="col-sm-9">
-                                    <textarea rows="4" id="embed_code" readonly="" class="form-control"
-                                      onclick="this.focus();this.select();"><iframe scrolling="no" height="250px" width="300px" frameborder="0"
-                                                 allowtransparency="true" src="{{url('/player/width/600/height/500/autoplay/true')}}"></iframe>
-                                    </textarea>
+                                    <textarea rows="4" id="embed_code" readonly="" class="form-control" onclick="this.focus();this.select();"><script type='text/javascript'>id='{{$stream->id}}'; width='640'; height='360';</script><script type='text/javascript' src='{{url('/player/')}}'></script></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -112,16 +110,16 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
+</div>
+@endsection
+
+@section('scripts')
     <script>
         text = $('#embed_code').val();
-
         $(document).on('click', '.embd', function () {
-            alert('fdgdg');
             switch ( $( ".embd" ).index( this ) ) {
                 case 0 :
                     $('#embed_code').val(text);
@@ -139,7 +137,6 @@
                     $('#embed_code').val(ntext);
                     break;
             }
-
         });
     </script>
 @endsection

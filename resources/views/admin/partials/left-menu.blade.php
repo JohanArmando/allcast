@@ -1,8 +1,8 @@
 <aside class="left-panel">
 
     <div class="user text-center">
-        <img src="{{asset('dashboard/images/avtar/user.png')}}" class="img-circle" alt="...">
-        <h4 class="user-name">Akshay Kumar</h4>
+        <img src="{{asset('dashboard/images/user.gif')}}" class="img-circle" alt="...">
+        <h4 class="user-name">{{ Auth::user()->name }}</h4>
     </div>
 
 
