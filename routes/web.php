@@ -23,4 +23,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::group(['namespace' => 'Admin'], function () {
     Route::resource('stream', 'StreamController');
+    Route::get('user/profile', 'UserController@index');
+    Route::post('user/profile', 'UserController@profile');
+    Route::post('user/password', 'UserController@password');
 });
+

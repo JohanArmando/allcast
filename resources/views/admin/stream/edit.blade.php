@@ -1,5 +1,7 @@
 @extends('layouts.dashboard')
-
+@section('title')
+    Edit Stream
+@endsection
 @section('content')
 <div class="wrapper container-fluid">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">

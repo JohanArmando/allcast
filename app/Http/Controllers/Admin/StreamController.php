@@ -32,7 +32,7 @@ class StreamController extends Controller
             'code'      => $stream->id,
             'size'      => '640x360'
         ]);
-        return redirect('home');
+        return redirect('home')->with('message',['type' => 'success' , 'message' => 'Stream '.$request->get('title'). ' creado Correctamente!']);
     }
 
     public function show($id)
@@ -51,7 +51,7 @@ class StreamController extends Controller
     {
         $stream = Stream::find($id);
         $stream->update($request->all());
-        return redirect('home');
+        return redirect('home')->with('message',['type' => 'success' , 'message' => 'Stream editado Correctamente!']);
     }
 
     public function destroy($id){

@@ -15,14 +15,14 @@
                 <div class="panel-body text-center">
                     <div class="row">
                         <div class="col-xs-6 col-sm-4">
-                            <a href="#" class="text-purple">
+                            <a href="{{url('user/profile')}}" class="text-purple">
                                 <span class="h2"><i class="fa fa-user-circle-o"></i></span>
                                 <p class="text-gray no-margn">Profile</p>
                             </a>
                         </div>
                         <div class="col-xs-12 visible-xs-block"><hr></div>
                         <div class="col-xs-6 col-sm-4">
-                            <a href="#" class="text-red">
+                            <a href="{{url('user/profile')}}" class="text-red">
                                 <span class="h2"><i class="fa fa-lock"></i></span>
                                 <p class="text-gray no-margn">Password</p>
                             </a>
