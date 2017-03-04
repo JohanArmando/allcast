@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -15,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'avatar'
     ];
 
     /**
@@ -26,4 +27,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function setAvatarAttribute($path){
+        if(! empty($path)){
+            $name = Carbon::now()->second.$path->getClientOriginalName();
+            $this->attributes['avatar'] = $name;
+            \Storage::disk('profile')->put($name, \File::get($path));
+        }
+    }
 }
