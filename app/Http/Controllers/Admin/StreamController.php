@@ -57,6 +57,6 @@ class StreamController extends Controller
     public function destroy($id){
         $stream = Stream::find($id);
         $stream->delete();
-        return redirect('home');
+        return redirect('home')->with('message',['type' => 'error' , 'message' => 'Stream eliminado Correctamente!']);
     }
 }

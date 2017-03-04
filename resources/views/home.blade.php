@@ -45,36 +45,5 @@
 
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title"> hola hola</h4>
-                    </div>
-                    <div class="panel-body">
-                        <div class="panel-content">
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta doloremque harum iusto maiores officia ratione reiciendis sunt? Alias animi architecto dolor dolore ea eos, id necessitatibus optio suscipit tempora vero?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="panel panel-defautl">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            hola hola
-                        </h4>
-                    </div>
-                    <div class="panel-body">
-                        <div class="panel-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consectetur eaque, error est hic id impedit incidunt ipsum magni optio rerum saepe ullam veniam vitae voluptates. Alias amet nisi rem.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-    </div>
 </div>
 @endsection
