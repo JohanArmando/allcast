@@ -6,28 +6,6 @@
         <span class="icon-bar"></span>
     </button>
 
-    <form role="search" class="navbar-left app-search pull-left hidden-xs">
-        <input type="text" placeholder="Enter keywords..." class="form-control form-control-circle">
-    </form>
-
-    <nav class=" navbar-default hidden-xs" role="navigation">
-        <ul class="nav navbar-nav">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-                <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <span class="caret"></span></a>
-                <ul role="menu" class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
     <ul class="nav-toolbar">
         <li class="dropdown"><a href="#" data-toggle="dropdown"><i class="fa fa-comments-o"></i> <span class="badge bg-warning">7</span></a>
             <div class="dropdown-menu md arrow pull-right panel panel-default arrow-top-right messages-dropdown">

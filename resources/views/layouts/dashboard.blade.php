@@ -13,11 +13,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{asset('dashboard/css/bootstrap/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('dashboard/css/plugins/calendar/calendar.css')}}">
-    <link rel="stylesheet" href="{{asset('dashboard/css/app/app.v1.css')}}">
-
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{asset('dashboard/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('dashboard/css/calendar.css')}}">
+    <link rel="stylesheet" href="{{asset('dashboard/css/app.v1.css')}}">
 
 </head>
     <body>
@@ -29,22 +28,12 @@
         </section>
 
     <!-- script's -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="{{asset('dashboard/js/plugins/underscore/underscore-min.js')}}"></script>
-    <script src="{{asset('dashboard/js/bootstrap/bootstrap.min.js')}}"></script>
-    <script src="{{asset('dashboard/js/globalize/globalize.min.js')}}"></script>
-    <script src="{{asset('dashboard/js/plugins/nicescroll/jquery.nicescroll.min.js')}}"></script>
-    <script src="{{asset('dashboard/js/plugins/DevExpressChartJS/dx.chartjs.js')}}"></script>
-    <script src="{{asset('dashboard/js/plugins/DevExpressChartJS/world.js')}}"></script>
-    <script src="{{asset('dashboard/js/plugins/DevExpressChartJS/demo-charts.js')}}"></script>
-    <script src="{{asset('dashboard/js/plugins/DevExpressChartJS/demo-vectorMap.js')}}"></script>
-    <script src="{{asset('dashboard/js/plugins/sparkline/jquery.sparkline.min.js')}}"></script>
-    <script src="{{asset('dashboard/js/plugins/sparkline/jquery.sparkline.demo.js')}}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.14/angular.min.js"></script>
-    <script src="{{asset('dashboard/js/angular/todo.js')}}"></script>
-    <script src="{{asset('dashboard/js/plugins/calendar/calendar.js')}}"></script>
-    <script src="{{asset('dashboard/js/plugins/calendar/calendar-conf.js')}}"></script>
-    <script src="{{asset('dashboard/js/app/custom.js')}}" type="text/javascript"></script>
+    <script src="{{asset('dashboard/js/jquery-1.9.1.min.js')}}"></script>
+    <script src="{{asset('dashboard/js/underscore-min.js')}}"></script>
+    <script src="{{asset('dashboard/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('dashboard/js/globalize.min.js')}}"></script>
+    <script src="{{asset('dashboard/js/jquery.nicescroll.min.js')}}"></script>
+    <script src="{{asset('dashboard/js/custom.js')}}"></script>
 
     </body>
 

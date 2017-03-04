@@ -2,9 +2,7 @@
 
 @section('content')
     <div class="wrapper container-fluid">
-        <div class="page-header">
-            <h1>Dashboard Allcastsmal <small>Tu creador de canal facil</small> </h1>
-        </div>
+        <div class="marginTop"></div>
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
                 <div class="panel panel-default">
