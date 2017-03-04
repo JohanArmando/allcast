@@ -34,9 +34,7 @@
             </form>
         </div>
         <div class="signup-agileinfo">
-            <h3>Quick Channel</h3>
-            <p>Phasellus vel urna magna. Quisque molestie felis varius ex faucibus auctor. Aenean sit amet erat ullamcorper,
-                condimentum odio in, commodo tellus.</p>
+            @include('auth.stream')
             <div class="more">
                 <a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Sign Up</a>
             </div>
