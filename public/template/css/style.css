@@ -28,8 +28,9 @@
 	nav.horizontal ul li{display: inline-block;}/* horizontal menu */
 	img{max-width:100%;}
 /*-- //Reset-Code --*/
+
 body {
-	background:url('../images/1.jpg') no-repeat 0px 0px;
+	background:url('../images/backgroundMax.png') no-repeat 0px 0px;
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 	background-attachment: fixed;
@@ -48,6 +49,11 @@ h1{
 .w3layouts{
 	width:70%;
 	margin:0 auto;
+}
+.logo-index{
+	margin-left: 682px !important;
+	margin-bottom: 80px;
+	margin-top: 45px;
 }
 .signin-agile,.signup-agileinfo {
     width: 35%;
@@ -68,7 +74,7 @@ h1{
 	margin-bottom:20px;
 }
 .signup-agileinfo{
-	background: rgba(233, 30, 99, 0.76);
+	background: #D50038;
 }
 .signup-agileinfo h3{
 	color:#fff;
@@ -134,7 +140,7 @@ form a {
 
 }
 input[type="submit"]{
-	background:#e91e63;
+	background:#D50038;
 	padding:13px 0;
 	font-size:16px;
 	color:#fff;
@@ -152,7 +158,7 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-	background:#081148;
+	background:#414042;
 }
 .footer-w3l {
     margin: 120px 0 15px 0;
@@ -239,6 +245,7 @@ a.book.popup-with-zoom-anim.button-isi.zoomIn.animated:hover{
 	h1 {
 		margin: 50px 0px 56px 0px;
 	}
+
 	.signin-agile, .signup-agileinfo {
 		padding:60px;
 	}
@@ -366,6 +373,9 @@ a.book.popup-with-zoom-anim.button-isi.zoomIn.animated:hover{
 	h1 {
 		font-size: 28px;
 		margin: 35px 0px 40px 0px;
+	}
+	.logo-index{
+		margin-left: 8px;
 	}
 	.signin-agile, .signup-agileinfo {
 		width: 74%;

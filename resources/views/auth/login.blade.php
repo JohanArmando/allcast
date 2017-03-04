@@ -1,9 +1,13 @@
 @extends('layouts.home')
+<!--
+    style="margin-left: 682px !important; margin-bottom: 80px; margin-top: 45px;
+-->
 @section('content')
-    <h1>Sign In And Sign Up Forms</h1>
+    <img class="img-responsive logo-index" src="{{asset('template/images/logo_all_cast.png')}}" alt="" >
+    <div class="clear"></div>
     <div class="w3layouts">
         <div class="signin-agile">
-            <h2>Sign In</h2>
+            <h2>Login</h2>
             @if ($errors->has('email'))
                 <span class="help-block"><strong>{{ $errors->first('email') }}</strong></span>
             @endif
@@ -30,7 +34,7 @@
             </form>
         </div>
         <div class="signup-agileinfo">
-            <h3>Sign Up</h3>
+            <h3>Quick Channel</h3>
             <p>Phasellus vel urna magna. Quisque molestie felis varius ex faucibus auctor. Aenean sit amet erat ullamcorper,
                 condimentum odio in, commodo tellus.</p>
             <div class="more">
@@ -40,12 +44,12 @@
         <div class="clear"></div>
     </div>
     <div class="footer-w3l">
-        <p class="agileinfo"> &copy; 2016 Sign In And Sign Up Forms . All Rights Reserved | Design by
-            <a href="http://w3layouts.com">W3layouts</a></p>
+        <p class="agileinfo"> &copy; 2017 AllCast . All Rights Reserved | Design by
+            <a href="#">Maxcorp Inc.</a></p>
     </div>
     <div class="pop-up">
         <div id="small-dialog" class="mfp-hide book-form">
-            <h3>Sign Up Form </h3>
+            <h3>Sign Up with new user </h3>
             @if ($errors->has('name'))
                 <span class="help-block"><strong>{{ $errors->first('name') }}</strong></span>
             @endif
