@@ -30,7 +30,9 @@
                     </ul>
                     <a href="#">Forgot Password?</a><br>
                     <div class="clear"></div>
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Login" style="width:50%;">
+                    <input type="submit" value="Sign Out" style="width: 50%; margin-left: 200px; margin-top: -300px;">
+
             </form>
         </div>
         <div class="signup-agileinfo">

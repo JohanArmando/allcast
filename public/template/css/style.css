@@ -30,7 +30,8 @@
 /*-- //Reset-Code --*/
 
 body {
-	background:url('../images/backgroundMax.png') no-repeat 0px 0px;
+	/*background:url('../images/backgroundMax.png') no-repeat 0px 0px;*/
+	background-color:#E9EBEE !important;
 	background-size: cover;
 	font-family: 'Open Sans', sans-serif;
 	background-attachment: fixed;
@@ -42,7 +43,7 @@ h1,h2,h3,h4,h5,h6{
 }
 h1{
 	font-size:40px;
-	color:#fff;
+	color:black;
 	margin:50px 0px 80px 0px;
 	text-align:center;
 }
@@ -166,11 +167,11 @@ input[type="submit"]:hover{
 .footer-w3l p{
 	font-size:14px;
 	text-align:center;
-	color:#fff;
+	color:black !important;
 	line-height:27px;
 }
 .footer-w3l p a{
-	color:#fff;
+	color: black;
 }
 .footer-w3l p a:hover{
 	text-decoration:underline;
