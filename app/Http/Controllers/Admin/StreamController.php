@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class StreamController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function create()
     {
         return view('admin.stream.create');
@@ -58,27 +63,6 @@ class StreamController extends Controller
         $stream = Stream::find($id);
         $stream->delete();
         return redirect('home')->with('message',['type' => 'error' , 'message' => 'Stream eliminado Correctamente!']);
-    }
-
-    public function home(Request $request)
-    {
-        $stream = Stream::create([
-            'title' => $request->get('title'),
-            'domain' => $request->get('domain'),
-            'user_id' => 1
-        ]);
-        $caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
-        $numerodeletras=12;
-        $cadena = "";
-        for($i=0;$i<$numerodeletras;$i++) {$cadena .= substr($caracteres,rand(0,strlen($caracteres)),1);}
-        StreamsInformation::create([
-            'stream_id' => $stream->id,
-            'server'    => 'prueba',
-            'key'       => $cadena,
-            'code'      => $stream->id,
-            'size'      => '640x360'
-        ]);
-        return redirect('home')->with('message',['type' => 'success' , 'message' => 'Stream '.$request->get('title'). ' creado Correctamente!']);
     }
 
 }

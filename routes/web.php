@@ -11,10 +11,20 @@
 |
 */
 
+use App\Models\Stream;
+use App\Models\StreamsInformation;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 Route::get('/', function () {return view('auth.login');});
 Route::get('/contact', function () {return view('auth.contact');});
-Route::get('/streams', function () {return view('auth.streams');});
+Route::get('/streams', function () {$streams = Stream::all();return view('auth.streams',compact('streams'));});
 Route::get('/player', function () {return view('admin.player');});
+Route::post('/message',function(Request $request){
+    $user = $request->all();
+    Mail::send('emails.contact', ['user' => $user], function ($m) use ($user) {$m->to(env('MAIL_USERNAME'), 'd')->subject('AllCast');});
+    return redirect('/');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -25,6 +35,25 @@ Route::group(['namespace' => 'Admin'], function () {
     Route::post('user/profile', 'UserController@profile');
     Route::post('user/password', 'UserController@password');
 
-    Route::post('stream/home', 'StreamController@home');
+    Route::post('stream/home', function(Request $request)
+    {
+        $stream = Stream::create([
+            'title' => $request->get('title'),
+            'domain' => $request->get('domain'),
+            'user_id' => 1
+        ]);
+        $caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+        $numerodeletras=12;
+        $cadena = "";
+        for($i=0;$i<$numerodeletras;$i++) {$cadena .= substr($caracteres,rand(0,strlen($caracteres)),1);}
+        StreamsInformation::create([
+            'stream_id' => $stream->id,
+            'server'    => 'prueba',
+            'key'       => $cadena,
+            'code'      => $stream->id,
+            'size'      => '640x360'
+        ]);
+        return redirect('/streams');
+    });
 });
 

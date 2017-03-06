@@ -3,7 +3,9 @@
 @section('content')
     <div class="headerLogo">
         <center>
+        <a href="/">
         <img class="img-responsive logo-index" src="{{asset('template/images/logo_all_cast.png')}}" alt="" >
+        </a>
         </center>
     </div>
     <div class="clear"></div>

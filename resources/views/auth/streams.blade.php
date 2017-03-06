@@ -3,7 +3,9 @@
  @section('content')
         <div class="headerLogo">
             <center>
+                <a href="/">
                 <img class="img-responsive logo-index" src="{{asset('template/images/logo_all_cast.png')}}" alt="" >
+                </a>
             </center>
         </div>
 
@@ -11,7 +13,8 @@
 
         <div class="w3layouts">
             <div class="signin-agile" style="width: 90%; !important;">
-                <table id="channels" class="display table table-bordered table-hover table-responsive" cellpadding="0" width="100%">
+                <h2>Streams</h2>
+                <table id="channels" style="background-color: #C63543" class="display table table-bordered table-hover table-responsive" cellpadding="0" width="100%">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -20,11 +23,13 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($streams as $stream)
                         <tr>
-                            <td>hola</td>
-                            <td>hola</td>
-                            <td>hola</td>
+                            <td>{{$stream->title}}</td>
+                            <td>{{$stream->domain}}</td>
+                            <td>{{$stream->title}}</td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Stream;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
