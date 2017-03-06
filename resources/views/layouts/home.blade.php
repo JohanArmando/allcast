@@ -10,7 +10,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>AllCast</title>
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{asset('template/css/style.css')}}">
