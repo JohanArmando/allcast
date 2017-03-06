@@ -47,10 +47,8 @@
         </div>
         <div class="clear"></div>
 
-
-
-        <div class="clear"></div>
     </div>
+    <div class="clear"></div>
     <div class="footer-w3l">
         <p class="agileinfo"> &copy; 2017 AllCast . All Rights Reserved | Design by
             <a href="#">Maxcorp Inc.</a></p>
