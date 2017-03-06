@@ -22,7 +22,7 @@
                 <input type="text" readonly="" class="form-control" onclick="this.focus();this.select();" id="sf" value="{{$stream->information->key}}"><br>
                 <label for="sf" class="col-sm-3 control-label">Embed code</label>
                 <textarea rows="4" style="width: 100%" id="embed_code" readonly="" class="form-control"><script type='text/javascript'>id='{{$stream->id}}'; width='640'; height='360';</script><script type='text/javascript' src='{{url('/player/')}}'></script></textarea>
-                <a href="{{url('/player')}}"> <input type="submit" value="Go To Stream" style="width:100%;"></a>
+                <a href="{{url('/player/home/'.$stream->title)}}"> <input type="submit" value="Go To Stream" style="width:100%;"></a>
         </div>
     </div>
 
@@ -36,3 +36,4 @@
 
         </div>
     </div>
+@endsection
