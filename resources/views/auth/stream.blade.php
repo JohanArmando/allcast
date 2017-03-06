@@ -21,7 +21,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-6">
-                    <h3><span>Contact </span><span>&nbsp; | &nbsp;</span><span> Channels</span></h3>
+                    <h3>
+                        <span><a href="{{url('/contact')}}" style="color: white !important;">Contact </a></span>
+                        <span>&nbsp; | &nbsp;</span>
+                        <span><a href="{{url('/contact')}}" style="color: white !important;"> Channels</a></span></h3>
                 </div>
 
         </div>

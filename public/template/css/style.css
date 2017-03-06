@@ -51,10 +51,13 @@ h1{
 	width:70%;
 	margin:0 auto;
 }
+.headerLogo{
+	width: 100%;
+}
 .logo-index{
-	margin-left: 480px !important;
-	margin-bottom: 80px;
-	margin-top: 45px;
+	align-content: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
 }
 .signin-agile,.signup-agileinfo {
     width: 35%;

@@ -1,7 +1,11 @@
 @extends('layouts.home')
 
 @section('content')
-    <img class="img-responsive logo-index" src="{{asset('template/images/logo_all_cast.png')}}" alt="" >
+    <div class="headerLogo">
+        <center>
+        <img class="img-responsive logo-index" src="{{asset('template/images/logo_all_cast.png')}}" alt="" >
+        </center>
+    </div>
     <div class="clear"></div>
 
     <div class="w3layouts">
