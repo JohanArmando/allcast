@@ -48,12 +48,13 @@ Route::group(['namespace' => 'Admin'], function () {
         for($i=0;$i<$numerodeletras;$i++) {$cadena .= substr($caracteres,rand(0,strlen($caracteres)),1);}
         StreamsInformation::create([
             'stream_id' => $stream->id,
-            'server'    => 'prueba',
+            'server'    => 'rtmp://193.124.178.193:1935/allcast',
             'key'       => $cadena,
             'code'      => $stream->id,
             'size'      => '640x360'
         ]);
-        return redirect('/streams');
+        return view('auth.show',compact('stream'));
     });
+    route::get('/show',function(){return view('auth.show');});
 });
 

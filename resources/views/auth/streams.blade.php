@@ -12,14 +12,14 @@
         <div class="clear"></div>
 
         <div class="w3layouts">
-            <div class="signin-agile" style="width: 90%; !important;">
+            <div class="signin-agile" style="width: 90%; !important;height: auto !important;">
                 <h2>Streams</h2>
                 <table id="channels" style="background-color: #C63543" class="display table table-bordered table-hover table-responsive" cellpadding="0" width="100%">
                     <thead>
                         <tr>
                             <th>Name</th>
                             <th>Domain</th>
-                            <th>Link</th>
+                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -27,7 +27,7 @@
                         <tr>
                             <td>{{$stream->title}}</td>
                             <td>{{$stream->domain}}</td>
-                            <td>{{$stream->title}}</td>
+                            <td>{{$stream->description}}</td>
                         </tr>
                         @endforeach
                     </tbody>
