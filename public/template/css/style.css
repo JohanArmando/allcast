@@ -52,7 +52,7 @@ h1{
 	margin:0 auto;
 }
 .logo-index{
-	margin-left: 682px !important;
+	margin-left: 480px !important;
 	margin-bottom: 80px;
 	margin-top: 45px;
 }
@@ -375,9 +375,7 @@ a.book.popup-with-zoom-anim.button-isi.zoomIn.animated:hover{
 		font-size: 28px;
 		margin: 35px 0px 40px 0px;
 	}
-	.logo-index{
-		margin-left: 8px;
-	}
+
 	.signin-agile, .signup-agileinfo {
 		width: 74%;
 	}
