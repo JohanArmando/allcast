@@ -1,10 +1,9 @@
 @extends('layouts.home')
-<!--
-    style="margin-left: 682px !important; margin-bottom: 80px; margin-top: 45px;
--->
+
 @section('content')
     <img class="img-responsive logo-index" src="{{asset('template/images/logo_all_cast.png')}}" alt="" >
     <div class="clear"></div>
+
     <div class="w3layouts">
         <div class="signin-agile">
             <h2>Login</h2>
@@ -30,19 +29,26 @@
                     </ul>
                     <a href="#">Forgot Password?</a><br>
                     <div class="clear"></div>
-                    <input type="submit" value="Login" style="width:50%;">
-                    <input type="submit" value="Sign Out" style="width: 50%; margin-left: 200px; margin-top: -300px;">
-
+                    <input type="submit" value="Login" style="width:100%;">
+                    <div class="clear"></div>
+                    <br>
+                    <h3>
+                        <a href="#small-dialog" class="book popup-with-zoom-anim buttom-isi zoomIn" data-wow-delay=".5s">
+                            <strong>If you do not have an account</strong>
+                        </a>
+                    </h3>
             </form>
         </div>
         <div class="signup-agileinfo">
             @include('auth.stream')
-            <div class="more">
+            <!--<div class="more">
                 <a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Sign Up</a>
-            </div>
+            </div>-->
         </div>
         <div class="clear"></div>
+
     </div>
+    <div class="clear"></div>
     <div class="footer-w3l">
         <p class="agileinfo"> &copy; 2017 AllCast . All Rights Reserved | Design by
             <a href="#">Maxcorp Inc.</a></p>
@@ -77,3 +83,4 @@
         </div>
     </div>
 @endsection
+

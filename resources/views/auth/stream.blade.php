@@ -17,5 +17,14 @@
                 <input type="submit" value="Create Chanel" style="background-color: rgba(216, 216, 216, 0.79)">
             </div>
         </form>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <h3><span>Contact </span><span>&nbsp; | &nbsp;</span><span> Channels</span></h3>
+                </div>
+
+        </div>
     </div>
 </div>
+    </div>
