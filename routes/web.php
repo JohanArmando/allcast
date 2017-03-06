@@ -11,12 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-});
-Route::get('/player', function () {
-    return view('admin.player');
-});
+Route::get('/', function () {return view('auth.login');});
+Route::get('/contact', function () {return view('auth.contact');});
+Route::get('/streams', function () {return view('auth.streams');});
+Route::get('/player', function () {return view('admin.player');});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

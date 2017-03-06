@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $streams = Stream::all();
+        $streams = Stream::where('user_id', Auth()->user()->id)->get();
         return view('home',compact('streams'));
     }
 }
