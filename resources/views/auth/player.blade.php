@@ -16,6 +16,8 @@
             <h2>{{$name}}</h2>
             <center>
                 <script src="//content.jwplatform.com/players/MEDIAID-PLAYERID.js"> </script>
+                <br>
+                <textarea rows="4" style="width: 100%" id="embed_code" readonly="" class="form-control"><script type='text/javascript'>id='1'; width='640'; height='360';</script><script type='text/javascript' src='{{url('/player/')}}'></script></textarea>
             </center>
         </div>
     </div>
