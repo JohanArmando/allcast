@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="{{asset('template/css/popup-box.css')}}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="{{asset('template/favicon/favicon_ac.png')}}" />
+        
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
         <script type="text/javascript" src="{{asset('template/js/jquery.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('template/js/jquery.magnific-popup.js')}}"></script>

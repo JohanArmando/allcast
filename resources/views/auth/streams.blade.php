@@ -38,7 +38,7 @@
         <div class="clear"></div>
         <div class="footer-w3l">
             <p class="agileinfo"> &copy; 2017 AllCast . All Rights Reserved | Design by
-                <a href="#">Maxcorp Inc.</a></p>
+                <a href="http://allcast.pw">Allcast Inc.</a></p>
         </div>
         <div class="pop-up">
             <div id="small-dialog" class="mfp-hide book-form">

@@ -5,7 +5,9 @@
 @section('content')
 <div class="wrapper container-fluid">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+    <div class="row">
         <div class="panel panel-default">
+
             <div class="panel-heading">
                 <h4><i class="fa fa-cog blue"></i> Stream settings</h4>
             </div>
@@ -84,7 +86,7 @@
                             <div class="form-group">
                                 <label for="sf" class="col-sm-3 control-label">Embed code</label>
                                 <div class="col-sm-9">
-                                    <textarea rows="4" id="embed_code" readonly="" class="form-control" onclick="this.focus();this.select();"><script type='text/javascript'>id='{{$stream->id}}'; width='640'; height='360';</script><script type='text/javascript' src='{{url('/player/')}}'></script></textarea>
+                                    <textarea rows="4" id="embed_code" readonly="" class="form-control" onclick="this.focus();this.select();"><script type='text/javascript'>id='{{$stream->id}}'; width='840'; height='600';</script><script type='text/javascript' src='{{Request::root()}}/js/Player.js'></script><div id="PlayAllCast"></div></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -112,6 +114,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     </div>

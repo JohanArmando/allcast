@@ -29,12 +29,13 @@
                             @foreach($streams as $stream)
                                 <tr>
                                     <th>{{$stream->id}}</th>
-                                    <td><a href="{{url('stream/'.$stream->id)}}">{{$stream->title}}</a></td>
+                                    <td><a href="{{url('stream/'.$stream->id)}}">{{ucfirst($stream->title)}}</a></td>
                                     <td>{{$stream->domain}}</td>
                                     <td>{{$stream->information->key}}</td>
                                     <td></td>
                                     <td>
                                         <a href="{{url('stream/'.$stream->id.'/edit')}}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                        <a href="{{url('stream/'.$stream->id.'')}}" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Watch Now</a>
                                     </td>
                                 </tr>
                             @endforeach

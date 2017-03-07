@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="more">
-                <input type="submit" value="Create Chanel" style="background-color: rgba(216, 216, 216, 0.79)">
+                <input type="submit" value="Create Channel" style="background-color: rgba(216, 216, 216, 0.79)">
             </div>
         </form>
         <br>
@@ -24,7 +24,7 @@
                     <h3>
                         <span><a href="{{url('/contact')}}" style="color: white !important;">Contact </a></span>
                         <span>&nbsp; | &nbsp;</span>
-                        <span><a href="{{url('/streams')}}" style="color: white !important;"> Channels</a></span></h3>
+                        <span><a href="{{url('/streams')}}" style="color: white !important;"> Schedules</a></span></h3>
                 </div>
 
         </div>

@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Mail;
 Route::get('/', function () {return view('auth.login');});
 Route::get('/contact', function () {return view('auth.contact');});
 Route::get('/streams', function () {$streams = Stream::all();return view('auth.streams',compact('streams'));});
-Route::get('/player', function () {return view('admin.player');});
+Route::get('/player/{id}/{width}/{heigth}', 'PlayerController@show');
 Route::post('/message',function(Request $request){
     $user = $request->all();
     Mail::send('emails.contact', ['user' => $user], function ($m) use ($user) {$m->to(env('MAIL_USERNAME'), 'd')->subject('AllCast');});

@@ -37,13 +37,13 @@ class StreamController extends Controller
             'code'      => $stream->id,
             'size'      => '640x360'
         ]);
-        return redirect('home')->with('message',['type' => 'success' , 'message' => 'Stream '.$request->get('title'). ' creado Correctamente!']);
+        return redirect('home')->with('message',['type' => 'success' , 'message' => 'Stream '.$request->get('title'). ' Created successfuly!']);
     }
 
     public function show($id)
     {
-        Stream::find($id);
-        return view('admin.stream.show');
+        $stream = Stream::find($id);
+        return view('admin.stream.show', compact('stream'));
     }
 
     public function edit($id)
@@ -56,13 +56,13 @@ class StreamController extends Controller
     {
         $stream = Stream::find($id);
         $stream->update($request->all());
-        return redirect('home')->with('message',['type' => 'success' , 'message' => 'Stream editado Correctamente!']);
+        return redirect('home')->with('message',['type' => 'success' , 'message' => 'Stream updated successfuly!']);
     }
 
     public function destroy($id){
         $stream = Stream::find($id);
         $stream->delete();
-        return redirect('home')->with('message',['type' => 'error' , 'message' => 'Stream eliminado Correctamente!']);
+        return redirect('home')->with('message',['type' => 'error' , 'message' => 'Stream deleted successfuly!']);
     }
 
 }

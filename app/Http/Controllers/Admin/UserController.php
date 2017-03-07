@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
 use App\User;
+use App\Models\Stream;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -12,6 +12,7 @@ class UserController extends Controller
 {
     public function index()
     {
+        
         return view('admin.user.index');
     }
 
@@ -21,12 +22,12 @@ class UserController extends Controller
         if(Hash::check($request->get('actual'),$user->password)){
             if($request->get('password') == $request->get('c-password')){
                 $user->password = $request->get('password');
-                $message = 'Datos cambiados correctamente';
+                $message = 'Info chanded';
             }else{
-                $message = 'Las contrase&ntilde;as no coinciden';
+                $message = 'Password does not match';
             }
         }else{
-            $message = 'La contrase&ntilde;a actual no coinciden';
+            $message = 'Password does not match';
         }
 
         return redirect()->back()->with('message',['type' => 'success' , 'message' =>$message]);
@@ -38,6 +39,6 @@ class UserController extends Controller
         $user->avatar = $request->file('avatar');
         $user->save();
 
-        return redirect('/home')->with('message',['type' => 'success' , 'message' => 'Editado Correctamente!']);
+        return redirect('/home')->with('message',['type' => 'success' , 'message' => 'Updated!']);
     }
 }

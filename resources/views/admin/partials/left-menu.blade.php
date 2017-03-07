@@ -9,7 +9,16 @@
         <ul class="list-unstyled">
             <li @if(Request::is('home')) class="active" @endif><a href="{{url('/home')}}"><i class="fa fa-bookmark-o"></i><span class="nav-label">Dashboard</span></a></li>
             <li @if(Request::is('stream/create')) class="active" @endif><a href="{{url('/stream/create')}}"><i class="fa fa-play-circle"></i><span class="nav-label">Create Stream</span></a></li>
-            <li class=""><a href="#"><i class="fa fa-sign-out"></i> <span class="nav-label">SignOut</span></a></li>
+            <li class="">
+                <a href="{{ url('/logout') }}"
+                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                <i class="fa fa-sign-out"></i> <span class="nav-label">SignOut</span>
+                            </a>
+                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+            </li>
         </ul>
     </nav>
 </aside>
