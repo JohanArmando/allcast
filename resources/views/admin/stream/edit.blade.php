@@ -5,6 +5,7 @@
 @section('content')
 <div class="wrapper container-fluid">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+        <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4><i class="fa fa-cog blue"></i> Stream settings</h4>
@@ -114,6 +115,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </div>
