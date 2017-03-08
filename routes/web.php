@@ -58,6 +58,6 @@ Route::group(['namespace' => 'Admin'], function () {
         return view('auth.show',compact('stream'));
     });
     route::get('/show',function(){return view('auth.show');});
-    route::get('/player/home/{name}',function($name){return view('auth.player',compact('name'));});
+    route::get('/player/home/{id}',function($id){return view('auth.player',compact('id'));});
 });
 

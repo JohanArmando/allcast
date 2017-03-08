@@ -13,14 +13,14 @@
 
     <div class="w3layouts">
         <div class="signin-agile" style="width: 90%; !important;height: auto !important;">
-            <h2>{{ucfirst($name)}}</h2>
+            <h2>{{ucfirst($id)}}</h2>
             <center>
-                <script type='text/javascript'>id='2'; width='800'; height='600';</script><script type='text/javascript' src='{{Request::root()}}/js/Player.js'></script><div id="PlayAllCast"></div>
+                <script type='text/javascript'>id='{{$id}}'; width='800'; height='600';</script><script type='text/javascript' src='{{Request::root()}}/js/Player.js'></script><div id="PlayAllCast"></div>
                 <br>
                 <h2>
                     Embed Code
                 </h2>
-                <textarea rows="4" style="width: 100%" id="embed_code" readonly="" class="form-control"><script type='text/javascript'>id='2'; width='840'; height='600';</script><script type='text/javascript' src='{{Request::root()}}/js/Player.js'></script><div id="PlayAllCast"></div></textarea>
+                <textarea rows="4" style="width: 100%" id="embed_code" readonly="" class="form-control"><script type='text/javascript'>id='{{$id}}'; width='840'; height='600';</script><script type='text/javascript' src='{{Request::root()}}/js/Player.js'></script><div id="PlayAllCast"></div></textarea>
             </center>
         </div>
     </div>

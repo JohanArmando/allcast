@@ -21,7 +21,7 @@
 		}
 		.CloseX{
 			position: absolute;
-			top: 2%;
+			top: 10	%;
 			left: 2%
 		}
 		.CloseX2{
@@ -90,6 +90,12 @@
 			z-index: 100000000;
 			color: #fffff !important;
 			}
+			.Counter{
+				position: absolute;
+			top: 2%;
+			left: 2%
+
+			}
 		}
 		
 	</style>
@@ -111,12 +117,18 @@
 	</div>
 	<div class="col-md-12 col-md-offset-1 col-sm-offset-3 col-xs-offset-2">
 		<div class="AdPlayer300x250">
+			<div class="Counter text-center">
+				This ad will close in
+				<span id="count"></span>
+			</div>
 			<iframe src="{{url('/Ads/300x250.html')}}" frameborder="0" scrolling="no" width="300px" height="250px"></iframe>
+
 			<div class="CloseX">
-				<a class="btn btn-danger btn-xs custom-btn">
+				<a class="btn btn-danger btn-xs custom-btn" >
 				x
 				</a>
 			</div>
+			
 		</div>
 		<div class="AdPlayer468x60">
 			<iframe src="{{url('/Ads/468x60.html')}}" frameborder="0" scrolling="no" width="468px" height="60px"></iframe>

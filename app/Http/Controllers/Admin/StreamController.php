@@ -72,5 +72,9 @@ class StreamController extends Controller
         $stream->delete();
         return redirect(request()->headers->get('referer'))->with('message',['type' => 'error' , 'message' => 'Stream deleted successfuly!']);
     }
+    public function PublicShow (Request $request)
+    {
+        return view('auth.show');
+    }
 
 }
