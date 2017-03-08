@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
 
 class Stream extends Model
 {
@@ -13,5 +14,9 @@ class Stream extends Model
     public function information()
     {
         return $this->hasOne(StreamsInformation::class);
+    }
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

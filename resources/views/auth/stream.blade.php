@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-xs-12  col-md-8 col-md-offset-2">
         <h3>Create Channel</h3>
+
         <form class="form-horizontal variant-form" method="post" action="{{url('/stream/home')}}">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group">
@@ -11,6 +12,7 @@
             <div class="form-group">
                 <div class="input-group">
                     <input type="text" class="form-control" name="domain" id="protectDomain" placeholder="Example: domain.com,www.example.tv">
+                    <small style="color: #ffffff; margin-left: 10px">Max Allowed Bitrate 500k</small>
                 </div>
             </div>
             <div class="more">

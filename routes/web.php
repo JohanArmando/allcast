@@ -34,7 +34,9 @@ Route::group(['namespace' => 'Admin'], function () {
     Route::get('user/profile', 'UserController@index');
     Route::post('user/profile', 'UserController@profile');
     Route::post('user/password', 'UserController@password');
-
+    Route::get('admin/channels', 'UserController@listAdminChannels');
+    Route::get('admin/users', 'UserController@listUsers');
+    Route::delete('users/{id}', 'UserController@destroy');
     Route::post('stream/home', function(Request $request)
     {
         $stream = Stream::create([

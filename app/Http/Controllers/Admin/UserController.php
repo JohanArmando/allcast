@@ -12,7 +12,6 @@ class UserController extends Controller
 {
     public function index()
     {
-        
         return view('admin.user.index');
     }
 
@@ -40,5 +39,37 @@ class UserController extends Controller
         $user->save();
 
         return redirect('/home')->with('message',['type' => 'success' , 'message' => 'Updated!']);
+    }
+    public function listAdminChannels (Request $request)
+    {
+        $user = User::find(Auth::user()->id);
+        if ($user->roll == 'streamer') {
+            return redirect('home');
+        }
+        $streams    =   Stream::all();
+        return view('admin.stream.index',compact('streams'));
+    }
+    public function listUsers ()
+    {
+        $user = User::find(Auth::user()->id);
+        if ($user->roll == 'streamer') {
+            return redirect('home');
+        }
+        $users  =   User::all();
+        return view('admin.user.list',compact('users'));
+    }
+    public function destroy($id){
+        $stream = User::find($id);
+        $stream->delete();
+        return redirect(request()->headers->get('referer'))->with('message',['type' => 'error' , 'message' => 'User deleted successfuly!']);
+    }
+    public function CheckAdmin($id){
+
+        $user = User::find($id);
+        if ($user->roll == 'streamer') {
+            // dd($user->roll);
+            return redirect('home');
+        }
+
     }
 }

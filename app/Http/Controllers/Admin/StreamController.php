@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Stream;
 use App\Models\StreamsInformation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class StreamController extends Controller
 {
@@ -48,7 +50,13 @@ class StreamController extends Controller
 
     public function edit($id)
     {
+
         $stream = Stream::find($id);
+        if (Auth::user()->roll != 'admin') {
+            if ($stream->user_id != Auth::user()->id) {
+                return redirect('home');
+            }
+        }
         return view('admin.stream.edit',compact('stream'));
     }
 
@@ -62,7 +70,7 @@ class StreamController extends Controller
     public function destroy($id){
         $stream = Stream::find($id);
         $stream->delete();
-        return redirect('home')->with('message',['type' => 'error' , 'message' => 'Stream deleted successfuly!']);
+        return redirect(request()->headers->get('referer'))->with('message',['type' => 'error' , 'message' => 'Stream deleted successfuly!']);
     }
 
 }

@@ -5,7 +5,7 @@ namespace App;
 use Carbon\Carbon;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use App\Models\Stream;
 class User extends Authenticatable
 {
     use Notifiable;
@@ -34,5 +34,9 @@ class User extends Authenticatable
             $this->attributes['avatar'] = $name;
             \Storage::disk('profile')->put($name, \File::get($path));
         }
+    }
+    public function streams()
+    {
+        return $this->hasMany(Stream::class);
     }
 }

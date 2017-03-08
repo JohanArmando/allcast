@@ -7,6 +7,14 @@
     </div>
     <nav class="navigation">
         <ul class="list-unstyled">
+            @if(Auth::user()->roll == 'admin')
+            <li @if(Request::is('admin/channels')) class="active" @endif>
+                <a href="{{url('/admin/channels')}}"><i class="fa fa-list"></i><span class="nav-label">Channels</span></a>
+            </li>
+            <li @if(Request::is('admin/users')) class="active" @endif>
+                <a href="{{url('/admin/users')}}"><i class="fa fa-users"></i><span class="nav-label">Users</span></a>
+            </li>
+            @endif
             <li @if(Request::is('home')) class="active" @endif><a href="{{url('/home')}}"><i class="fa fa-bookmark-o"></i><span class="nav-label">Dashboard</span></a></li>
             <li @if(Request::is('stream/create')) class="active" @endif><a href="{{url('/stream/create')}}"><i class="fa fa-play-circle"></i><span class="nav-label">Create Stream</span></a></li>
             <li class="">

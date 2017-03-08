@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="{{asset('dashboard/css/calendar.css')}}">
     <link rel="stylesheet" href="{{asset('dashboard/css/app.v1.css')}}">
     <link rel="stylesheet" href="{{asset('dashboard/css/toastr.min.css')}}">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
     <script src="{{asset('dashboard/js/jquery-1.9.1.min.js')}}"></script>
+    <script src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 </head>
     <body>
         @include('admin.partials.left-menu')

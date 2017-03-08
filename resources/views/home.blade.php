@@ -36,6 +36,7 @@
                                     <td>
                                         <a href="{{url('stream/'.$stream->id.'/edit')}}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
                                         <a href="{{url('stream/'.$stream->id.'')}}" class="btn btn-sm btn-success"><i class="fa fa-eye"></i> Watch Now</a>
+                                        
                                     </td>
                                 </tr>
                             @endforeach

@@ -8,7 +8,7 @@
         <div class="row">
             <div class="panel panel-default">
                 <div class="embed-responsive embed-responsive-4by3"> 
-                    <script type='text/javascript'>id='{{$stream->id}}'; width='840'; height='600';</script><script type='text/javascript' src='{{Request::root()}}/js/Player.js'></script><div id="PlayAllCast"></div>
+                    <script type='text/javascript'>id='{{$stream->id}}'; width='840'; height='630';</script><script type='text/javascript' src='{{Request::root()}}/js/Player.js'></script><div id="PlayAllCast"></div>
                 </div>
                 <div class="panel-footer clearfix">
                     <div class="pull-left">
