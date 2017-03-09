@@ -22,7 +22,7 @@ $(document).ready(function(){
 	var counter = 30;
 	setInterval(function() {
 		counter--;
-		if (counter <= 20) {
+		if (counter <= 25) {
 			closeX.show();
 		}
 		if (counter >= 0) {
