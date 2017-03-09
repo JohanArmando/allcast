@@ -50,7 +50,7 @@ Route::group(['namespace' => 'Admin'], function () {
         for($i=0;$i<$numerodeletras;$i++) {$cadena .= substr($caracteres,rand(0,strlen($caracteres)),1);}
         StreamsInformation::create([
             'stream_id' => $stream->id,
-            'server'    => 'http://origin.allcast.pw:1935/stream',
+            'server'    => 'rtmp://origin.allcast.pw:1935/stream',
             'key'       => $cadena,
             'code'      => $stream->id,
             'size'      => '640x360'
