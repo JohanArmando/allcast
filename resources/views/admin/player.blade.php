@@ -138,13 +138,15 @@
 			</div>
 		</div>
 	</div>
-	
+<!-- POP UP AND MOBIL HERE -->
 <script type="text/javascript" data-cfasync="false">
 //<![CDATA[
  (function(){ var c=window;c["_p\x6f\u0070"]=[["\u0073\u0069\x74\x65\u0049d",505180],["mi\u006eBi\x64",0],["p\u006fp\x75\x6e\x64\u0065\u0072s\x50\x65r\x49\x50",0],["\u0064\u0065\u006c\x61\u0079\u0042\u0065t\u0077\x65\x65\u006e",0],["d\x65\u0066\x61\u0075l\x74",false],["\u0064\u0065f\x61u\u006c\x74Per\u0044a\u0079",0],["\u0074\u006f\x70\x6d\u006fs\u0074L\u0061\x79\x65\x72",!0]];var b=["\u002f\u002f\x63\u0031.\u0070op\x61\u0064\u0073.\x6e\x65\u0074/\x70\x6fp\u002e\u006a\x73","\x2f/\x632\x2e\x70\x6f\u0070\u0061\u0064\x73.n\x65t\u002f\x70\u006f\u0070\u002e\u006as","\u002f/\x77\u0077\x77\x2eg\u0076x\u006f\x62j\u0063\u0078\x63\x62\x6b\u0062\u002e\u0063\x6f\x6d\u002f\x78\u0069\x63\u002e\u006a\x73","\u002f\x2f\x77\u0077w.\u0061\x66e\u0064\x69\x73\x70dl\x6a\u0067b\x2e\u0063\u006f\u006d/\u0078t\x6dq\x2ejs",""],k=0,h,u=function(){if(""==b[k])return;h=c["\u0064\x6f\u0063\x75\x6de\u006et"]["\u0063\u0072\x65a\x74\u0065\u0045\u006ce\u006dent"]("\x73\u0063\u0072\u0069p\x74");h["\x74yp\u0065"]="t\x65xt\x2f\u006aa\x76\u0061\u0073\u0063\u0072\u0069\x70t";h["a\u0073\x79\u006ec"]=!0;var x=c["\x64\u006f\u0063u\u006de\u006e\x74"]["\x67\u0065tE\u006c\x65\x6d\x65\u006et\u0073\u0042\u0079T\u0061gN\u0061\x6d\x65"]("\x73\x63\u0072\x69\u0070t")[0];h["\x73\x72\x63"]=b[k];if(k<2){h["\u0063\x72\x6f\x73\u0073\u004f\x72\x69\x67\u0069\u006e"]="\x61\u006e\u006f\x6eym\u006f\x75s";};h["\x6f\u006e\x65r\x72o\u0072"]=function(){k++;u()};x["p\u0061\x72\x65\u006et\u004eo\u0064\u0065"]["\u0069\u006e\x73\u0065\u0072t\x42\u0065\x66\u006fre"](h,x)};u()})();
 //]]>
 </script>
 <script src="//wafmedia6.com/m/p.js?a=70358698&amp;p=70358704&amp;f=120&amp;t=Watch+in+HD&amp;n=top&amp;s=1" type="text/javascript"></script>
+<!-- POP UP AND MOBIL HERE -->
+
 </body>
 </html>
 
