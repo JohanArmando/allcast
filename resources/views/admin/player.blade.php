@@ -103,7 +103,7 @@
 		<div id="player"></div>
 		<script>
 			var player = new Clappr.Player({
-			source: "http://176.126.83.29/stream/{{$stream}}/playlist.m3u8", 
+			source: "http://origin.allcast.pw:1935/stream/{{$stream}}/playlist.m3u8", 
 			parentId: "#player",
 			width:{{$request->width}},
 			height:{{$request->heigth}},
