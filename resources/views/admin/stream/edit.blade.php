@@ -37,7 +37,7 @@
                                             <textarea rows="4" class="form-control" name="description">{{$stream->description}}</textarea>
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="embedding" class="col-sm-3 control-label">Embedding</label>
                                         <div class="col-sm-9">
                                             <label class="radio-inline">
@@ -47,7 +47,7 @@
                                                 <input type="radio" name="embedding" value="disabled"> Disabled
                                             </label>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="form-group">
                                         <label for="domains" class="col-sm-3 control-label">Domain protection</label>
                                         <div class="col-sm-9">
