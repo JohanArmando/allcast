@@ -12,7 +12,7 @@ class PlayerController extends Controller
     public function show(Request $request)
     {
         $stream     =   Stream::find($request->id)->information->key;
-        dd(explode('//', request()->headers->get('referer')));
+        // dd(explode('//', request()->headers->get('referer')));
 
         return view('admin.player', compact('request','stream'));
     }
