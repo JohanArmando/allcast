@@ -100,6 +100,7 @@
 	</style>
 </head>
 <body>
+	<div id="app">
 	<div class="playerContainer">
 		<div id="player"></div>
 		<script>
@@ -147,7 +148,7 @@
 </script>
 <script src="//wafmedia6.com/m/p.js?a=70358698&amp;p=70358704&amp;f=120&amp;t=Watch+in+HD&amp;n=top&amp;s=1" type="text/javascript"></script>
 <!-- POP UP AND MOBIL HERE -->
-
+</div>
 </body>
 </html>
 

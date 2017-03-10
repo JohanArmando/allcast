@@ -18,7 +18,7 @@ webserver
 server 2
 IP address: 193.124.178.185
 Username: root
-Password: g79FPf80k0su
+Password: @llcast2017
 _____________________________
 edge server
 Main IP Address: 176.126.83.29
