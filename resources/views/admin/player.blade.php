@@ -148,6 +148,9 @@
 </script>
 <script src="//wafmedia6.com/m/p.js?a=70358698&amp;p=70358704&amp;f=120&amp;t=Watch+in+HD&amp;n=top&amp;s=1" type="text/javascript"></script>
 <!-- POP UP AND MOBIL HERE -->
+<div id="somethingcurious" style="display: none">
+	<img src="http://whos.amung.us/widget/allcastpw12.png" width="200">
+</div>
 </div>
 </body>
 </html>

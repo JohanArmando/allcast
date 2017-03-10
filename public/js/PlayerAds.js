@@ -1,6 +1,8 @@
 $(document).ready(function(){
 	var closeX = $('.CloseX');
 	var closeX2 = $('.CloseX2');
+
+
 	closeX2.hide();
 	closeX.hide();
 	$('.CloseX').on('click', function(){
@@ -53,5 +55,4 @@ $(document).ready(function(){
 	    checkOnLoad: false,
 	    resetOnEnd: false
 	});
-	$('#app').append('<div style="display: none"><img src="http://whos.amung.us/widget/allcastpw12.png" width="200"></div>');
 });
