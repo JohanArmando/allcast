@@ -22,7 +22,8 @@
                 <label for="sf" class="col-sm-3 control-label" style="float: left; margin-left: 6%">Stream Name</label>
                 <input type="text" readonly="" class="form-control" onclick="this.focus();this.select();" id="sf" value="{{$stream->information->key}}"><br>
                 <label for="sf" class="col-sm-3 control-label" style="float: left; margin-left: 6%">Embed code</label>
-                    <textarea rows="4" class="form-control" style="width: 90%" id="embed_code" readonly="" class="form-control"><script type='text/javascript'>id='{{$stream->id}}'; width='640'; height='360';</script><script type='text/javascript' src='{{url('/player/')}}'></script></textarea>
+                    <textarea rows="4" class="form-control" style="width: 90%" id="embed_code" readonly="" class="form-control"><script type='text/javascript'>id='{{$stream->id}}'; width='640'; height='360';</script><script type='text/javascript' src='{{Request::root()}}/js/Player.js'></script><div id="PlayAllCast"></div>
+                    </textarea>
                 <a href="{{url('/player/home/'.$stream->id)}}"> <input type="submit" value="Go To Stream" style="width:100%;"></a>
         </div>
         </center>
