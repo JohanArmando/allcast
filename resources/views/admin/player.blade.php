@@ -5,6 +5,7 @@
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="{{asset('dashboard/js/jquery-1.9.1.min.js')}}"></script>
+	<script src="{{asset('node_modules/fuckadblock/fuckadblock.js')}}"></script>
 	<script type="text/javascript" src="/../js/PlayerAds.js"></script>
 	<style type="text/css">
 		.playerContainer{

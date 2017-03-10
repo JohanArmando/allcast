@@ -10,13 +10,8 @@ $(document).ready(function(){
 	$('.CloseX2').on('click', function(){
 		$('.AdPlayer468x60').hide();
 	});
-	// setInterval(function() {
- //    	$('.AdPlayer300x250').show();
-	// }, 1000 * 60 * 5);
+
 	
-	// setInterval(function() {
- //    	$('.AdPlayer468x60').show();
-	// }, 1000 * 60 * 5);
 	
 	(function(){
 	var counter = 30;
@@ -38,5 +33,25 @@ $(document).ready(function(){
 
 	})();
 
+	function adBlockDetected() {
+		$('.AdPlayer468x60').hide();
+		$('.AdPlayer300x250').hide();
+	}
+	if(typeof fuckAdBlock === 'undefined') {
+	    adBlockDetected();
+	} else {
+	    fuckAdBlock.onDetected(adBlockDetected);
+	    fuckAdBlock.onNotDetected(adBlockNotDetected);
+	    fuckAdBlock.on(true, adBlockDetected);
+	    fuckAdBlock.on(false, adBlockNotDetected);
+	    fuckAdBlock.on(true, adBlockDetected).onNotDetected(adBlockNotDetected);
+	}
+
+	fuckAdBlock.setOption('checkOnLoad', false);
+	fuckAdBlock.setOption({
+	    debug: true,
+	    checkOnLoad: false,
+	    resetOnEnd: false
+	});
 
 });
