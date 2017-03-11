@@ -26,7 +26,7 @@
                     <h3>
                         <span><a href="{{url('/contact')}}" style="color: white !important;">Contact </a></span>
                         <span>&nbsp; | &nbsp;</span>
-                        <span><a href="{{url('/streams')}}" style="color: white !important;"> Schedules</a></span></h3>
+                        <span><a href="{{url('/schedules')}}" style="color: white !important;"> Schedules</a></span></h3>
                 </div>
 
         </div>
